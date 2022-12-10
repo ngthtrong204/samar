@@ -839,6 +839,41 @@ nav {
     transform: translateY(1.5px);
 }
 
+/* CLIENTS */
+.clients {
+    background-image: url(../image/bg17.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center  ;
+
+
+}
+
+.clients__content {
+    max-width: 1199px;
+    margin: auto;
+
+}
+.clients-comment{
+    max-width: 770px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.clients-text h3{
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 800;
+}
+.clients-text i{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f55f8d;
+}
 /* SUBCRIBE */
 .subscribe {
     background-image: url(../image/pattern2.png);
@@ -927,6 +962,7 @@ footer {
     font-size: 15px;
     height: 465px;
     position: relative;
+    z-index: -1;
 }
 
 footer a {
@@ -1022,6 +1058,7 @@ footer a {
             #f55f8d 100%);
     border-radius: 40px;
 }
+
 .footer__link li {
     display: block;
     padding: 11px 0;
@@ -1038,31 +1075,36 @@ footer a {
 .footer__link li:hover a {
     color: white;
 }
+
 .footer__item {
     width: 33.3333%;
 }
 
-.footer__contact{
+.footer__contact {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #1f343b;
     padding: 10px 0;
 }
-.footer__padding{
+
+.footer__padding {
     max-width: 1199px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer__padding p{
+
+.footer__padding p {
     color: white;
 }
-.footer__padding span{
+
+.footer__padding span {
     color: #f55f8d;
 }
-.footer__padding a i{
+
+.footer__padding a i {
     color: white;
     width: 32px;
     text-align: center;
@@ -1074,19 +1116,22 @@ footer a {
     background-color: rgba(255, 255, 255, 0.1);
     transition: all .5s;
 }
-.footer__padding a:hover i{
+
+.footer__padding a:hover i {
     background-color: #f55f8d;
 }
+
 /* BACK TO TOP */
-.backToTop{
+.backToTop {
     visibility: hidden;
     opacity: 0;
     transition: 1s;
 }
-.backToTop a{
+
+.backToTop a {
     cursor: pointer;
     position: fixed;
-    right: 15px ;
+    right: 15px;
     bottom: 15px;
     width: 50px;
     height: 50px;
@@ -1095,11 +1140,13 @@ footer a {
     border-radius: 8px;
     box-shadow: -4px 4px 24px -10px #f55f8d;
 }
-.backToTop i{
+
+.backToTop i {
     color: white;
     line-height: 50px;
 }
-.cd-top--is-visible{
+
+.cd-top--is-visible {
     visibility: visible;
     opacity: 1;
 }
