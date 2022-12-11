@@ -758,14 +758,19 @@ nav {
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding: 20px 0;
-
+    padding: 21px 0;
 }
 
 .clients__content {
+    overflow: hidden;
     max-width: 1199px;
     margin: auto;
+    padding-bottom:20px  ;
 }
+.clients-comment{
+    overflow: visible;
+}
+
 
 .clients__box {
     padding: 30px 0;
@@ -824,17 +829,114 @@ nav {
 }
 
 .swiper-pagination-bullet{
-    margin: 0 3px;
+    margin: 0 4px;
 }
 .swiper-pagination-bullet-active {
     background-color: #f55f8d;
 }
+.clients-thumbs{
+    width: 300px;
+    padding: 50px 0  ;
+    margin: auto;
+    box-shadow: 0 0 20px 4px inset rgb(255, 255, 255);
+    position: relative;
+}
+.clients-thumbs::before,
+.clients-thumbs::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 40px;
+}
+.clients-thumbs::before{
+    left: 0;
+    background-image: linear-gradient(to right,
+    white, rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+.clients-thumbs::after{
+    right: 0;
+    background-image: linear-gradient(to left,
+    white, rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+
+.clients-pic{
+    transition: all .5s;
+    position: relative;
+    z-index: 2;
+}
+.swiper-slide-thumb-active .clients-pic{
+    transform: translateY(-30px);
+}
+.clients-pic::before{
+    content: " ";
+    display: block;
+    width: 49px;
+    height: 33px;
+    position: absolute;
+    top: 72px;
+    left: 24.7px;
+    background-image: url(../image/pattern12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f55f8d;
+    z-index: -1;
+    opacity: 0;
+    transition: all .5s;
+}
+.swiper-slide-thumb-active .clients-pic::before{
+    opacity: 1;
+}
+.swiper-slide-thumb-active .shape-bx::before,
+.swiper-slide-thumb-active .shape-bx::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #f55f8d;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shape-bx::after{
+    width: 15px;
+    height: 15px;
+    bottom: -50px;
+}
+.shape-bx::before{
+    width: 10px;
+    height: 10px;
+    bottom: -80px;
+}
+
+.swiper-slide-thumb-active .clients-pic .shape-bx{
+
+}
+
+
+
+
+
+
+.clients-pic img{
+    width: 80px;
+    height: 80px;
+    background-color: #f55f8d;
+    border-radius: 100%;
+    padding: 5px;
+
+}
+
+
+
 
 
 
 /* BLOG */
 .blog {
-    padding: 115px 0 50px;
+    padding: 120px 0 50px;
     background-image: url(../image/bg16.png);
     background-position: top center;
     background-size: cover;
