@@ -862,7 +862,6 @@ nav {
     white, rgba(255, 255, 255, 0));
     z-index: 2;
 }
-
 .clients-pic{
     transition: all .5s;
     position: relative;
@@ -911,15 +910,6 @@ nav {
     bottom: -80px;
 }
 
-.swiper-slide-thumb-active .clients-pic .shape-bx{
-
-}
-
-
-
-
-
-
 .clients-pic img{
     width: 80px;
     height: 80px;
@@ -928,11 +918,6 @@ nav {
     padding: 5px;
 
 }
-
-
-
-
-
 
 /* BLOG */
 .blog {
